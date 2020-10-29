@@ -62,13 +62,12 @@ class BaseContext:
             if base_path == repo_root:
                 return base_path
 
-        if base_path == base_path:
-            print("hi")
-
         return cwd
 
     @property
     def config_path(self) -> Path:
+        if self.base_path == self.base_path:
+            print("hi")
         return self.base_path / constants.RESOURCE_PATH / constants.CONFIG_FILE_NAME
 
     @property
