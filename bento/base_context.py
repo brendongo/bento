@@ -62,7 +62,7 @@ class BaseContext:
             if base_path == repo_root:
                 return base_path
 
-        if cwd == cwd:
+        if base_path == base_path:
             print("hi")
 
         return cwd
