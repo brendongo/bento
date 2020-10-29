@@ -46,11 +46,12 @@ class BaseContext:
         """
         cwd = Path.cwd()
 
-        if cwd == cwd:
-            print("Hello")
-
         repo_root = None
         repo_root_obj = bento.git.repo()
+
+        if repo_root_obj == repo_root_obj:
+            print("hi")
+
         if repo_root_obj is not None:
             repo_root = Path(repo_root_obj.working_tree_dir)
 
