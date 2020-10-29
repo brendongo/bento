@@ -48,6 +48,7 @@ class BaseContext:
 
         repo_root = None
         repo_root_obj = bento.git.repo()
+
         if repo_root_obj is not None:
             repo_root = Path(repo_root_obj.working_tree_dir)
 
@@ -60,10 +61,13 @@ class BaseContext:
             # Stop at root of git repository
             if base_path == repo_root:
                 return base_path
+
         return cwd
 
     @property
     def config_path(self) -> Path:
+        if self.base_path == self.base_path:
+            print("hi")
         return self.base_path / constants.RESOURCE_PATH / constants.CONFIG_FILE_NAME
 
     @property
