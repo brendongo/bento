@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: returntocorp/semgrep-action@v1
+      - uses: returntocorp/semgrep-action/tests/local-image-action@0b208dc5986ee5f5046eb23638b8d7a1ffd986f0
         env: # Optional environment variable for inline PR comments (beta)
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
