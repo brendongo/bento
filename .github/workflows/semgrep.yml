@@ -15,7 +15,7 @@ jobs:
       with:
         auditOn: push
         publishUrl: https://staging.semgrep.dev
-        publishToken: ${{ secrets.SEMGREP__APP_TOKEN }}
+        publishToken: ${{ secrets.SEMGREP_APP_TOKEN }}
         publishDeployment: 48
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
